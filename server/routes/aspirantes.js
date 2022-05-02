@@ -249,18 +249,6 @@ router.get('', (req, res, next) => {
   });
 });
 
-router.get("/:id", (req, res, next) => {
-  Aspirante.findById(req.params.id).then(aspirante => {
-    if(aspirante) {
-      res.status(200).json(aspirante);
-    } else {
-      res.status(404).json({
-        mensaje: "Aspirante no encontrado",
-      });
-    }
-  });
-});
-
 router.delete("/:id", (req, res, next) => {
   Aspirante.deleteOne({ _id: req.params.id }).then(result => {
     res.status(200).json({
