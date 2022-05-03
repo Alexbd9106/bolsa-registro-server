@@ -105,6 +105,7 @@ router.post('', (req, res, next) => {
                     "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Dirección: </strong>" + aspirante.direccion + "</p>" +
                     "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Correo Electrónico: </strong>" + aspirante.correo + "</p>" +
                     "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Teléfono(s): </strong>" + aspirante.telefono + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Teléfono(s): </strong>" + aspirante.raza + "</p>" +
                     "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Estado Civil: </strong>" + aspirante.estado_civil + "</p>" +
                     "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Cantidad de Hijos: </strong>" + aspirante.hijos + "</p>" +
                     "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Estatura (Metros): </strong>" + aspirante.estatura + "</p>" +
@@ -207,7 +208,7 @@ router.post('', (req, res, next) => {
 
   const email1 = {
     from: '"Bolsa Empleadora Industrias NEXUS S.A." <no-reply@nexus.co.cu>',
-    to: "adilen@nexus.co.cu",
+    to: "alex@nexus.co.cu",
     subject: "Planilla del aspirante " + aspirante.nombre + " " + aspirante.apellidos,
     attachments: [{
       filename: "Planilla de " + aspirante.nombre + " " + aspirante.apellidos + ".pdf",
