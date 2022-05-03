@@ -150,7 +150,7 @@ router.post('', (req, res, next) => {
                         "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>" + centros + "</td>" +
                         "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>" + desdes + "</td>" +
                         "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>" + hastas + "</td>" +
-                      "</tr>";
+                      "</tr>" +
                     "</table>" +
                   "</div>"
   ;
