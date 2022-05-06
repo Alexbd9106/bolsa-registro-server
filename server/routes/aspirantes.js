@@ -38,7 +38,8 @@ router.post('', (req, res, next) => {
     direccion_trabajo: req.body.direccion_trabajo,
     telefono_trabajo: req.body.telefono_trabajo,
     otros_oficios: req.body.otros_oficios,
-    estado: req.body.estado
+    estado: req.body.estado,
+    causa_eliminacion: req.body.causa_eliminacion
   });
 
   aspirante.save().then(aspiranteCreado => {

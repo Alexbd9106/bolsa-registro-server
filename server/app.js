@@ -9,7 +9,7 @@ const escolaridadesRoutes = require("./routes/escolaridades");
 const estadosRoutes = require("./routes/estados");
 const provinciasRoutes = require("./routes/provincias");
 const razasRoutes = require("./routes/razas");
-const situacionesesRoutes = require("./routes/situaciones");
+const situacionesRoutes = require("./routes/situaciones");
 
 const app = express();
 
@@ -37,6 +37,6 @@ app.use("/escolaridades", escolaridadesRoutes);
 app.use("/estados", estadosRoutes);
 app.use("/provincias", provinciasRoutes);
 app.use("/razas", razasRoutes);
-app.use("/situaciones", situacionesesRoutes);
+app.use("/situaciones", situacionesRoutes);
 
 module.exports = app;

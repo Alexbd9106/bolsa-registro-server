@@ -33,7 +33,8 @@ const aspiranteSchema = mongoose.Schema({
   direccion_trabajo: { type: String },
   telefono_trabajo: { type: String },
   otros_oficios: { type: String },
-  estado: { type: String }
+  estado: { type: String },
+  causa_eliminacion: { type: String }
 });
 
 module.exports = mongoose.model('Aspirante', aspiranteSchema);
