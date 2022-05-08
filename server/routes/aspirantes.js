@@ -39,7 +39,8 @@ router.post('', (req, res, next) => {
     telefono_trabajo: req.body.telefono_trabajo,
     otros_oficios: req.body.otros_oficios,
     estado: req.body.estado,
-    causa_eliminacion: req.body.causa_eliminacion
+    causa_eliminacion: req.body.causa_eliminacion,
+    causa_no_apto: req.body.causa_no_apto
   });
 
   aspirante.save().then(aspiranteCreado => {
@@ -243,19 +244,57 @@ router.post('', (req, res, next) => {
   }, 5000);
 });
 
+router.put("/:id", (req, res, next) => {
+  const aspirante = new Aspirante({
+    _id: req.body.id,
+    nombre: req.body.nombre,
+    apellidos: req.body.apellidos,
+    alias: req.body.alias,
+    ci: req.body.ci,
+    edad: req.body.edad,
+    sexo: req.body.sexo,
+    provincia: req.body.provincia,
+    municipio: req.body.municipio,
+    direccion: req.body.direccion,
+    correo: req.body.correo,
+    telefono: req.body.telefono,
+    raza: req.body.raza,
+    estatura: req.body.estatura,
+    peso: req.body.peso,
+    estado_civil: req.body.estado_civil,
+    hijos: req.body.hijos,
+    licencia: req.body.licencia,
+    categoria_licencia: req.body.categoria_licencia,
+    militancia: req.body.militancia,
+    nivel_escolaridad: req.body.nivel_escolaridad,
+    titulo_graduado: req.body.titulo_graduado,
+    experiencia_laboral: req.body.experiencia_laboral,
+    otros_estudios: req.body.otros_estudios,
+    trayectoria_laboral: req.body.trayectoria_laboral,
+    situacion_laboral: req.body.situacion_laboral,
+    centro_trabajo: req.body.centro_trabajo,
+    organismo_trabajo: req.body.organismo_trabajo,
+    cargo_trabajo: req.body.cargo_trabajo,
+    categoria_trabajo: req.body.categoria_trabajo,
+    direccion_trabajo: req.body.direccion_trabajo,
+    telefono_trabajo: req.body.telefono_trabajo,
+    otros_oficios: req.body.otros_oficios,
+    estado: req.body.estado,
+    causa_eliminacion: req.body.causa_eliminacion,
+    causa_no_apto: req.body.causa_no_apto
+  });
+  Aspirante.updateOne({_id: req.params.id}, aspirante).then(result => {
+    res.status(200).json({
+      mensaje: "Aspirante actualizado"
+    });
+  });
+});
+
 router.get('', (req, res, next) => {
   Aspirante.find().then(documents => {
     res.status(200).json({
       message: "Aspirantes obtenidos exitosamente",
       aspirantes: documents
-    });
-  });
-});
-
-router.delete("/:id", (req, res, next) => {
-  Aspirante.deleteOne({ _id: req.params.id }).then(result => {
-    res.status(200).json({
-      mensaje: "Aspirante eliminado"
     });
   });
 });
