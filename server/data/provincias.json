@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "625dc1fd8d3f630366aa1b99"
+  },
+  "nombre": "Pinar del Río"
+},{
+  "_id": {
+    "$oid": "625dc8618d3f630366aa1b9a"
+  },
+  "nombre": "Artemisa"
+},{
+  "_id": {
+    "$oid": "625dc87f8d3f630366aa1b9b"
+  },
+  "nombre": "La Habana"
+},{
+  "_id": {
+    "$oid": "625dc9758d3f630366aa1b9c"
+  },
+  "nombre": "Mayabeque"
+},{
+  "_id": {
+    "$oid": "625dc9828d3f630366aa1b9d"
+  },
+  "nombre": "Matanzas"
+},{
+  "_id": {
+    "$oid": "625dc98f8d3f630366aa1b9e"
+  },
+  "nombre": "Cienfuegos"
+},{
+  "_id": {
+    "$oid": "625dc9978d3f630366aa1b9f"
+  },
+  "nombre": "Villa Clara"
+},{
+  "_id": {
+    "$oid": "625dc9cf8d3f630366aa1ba0"
+  },
+  "nombre": "Sancti Spíritus"
+},{
+  "_id": {
+    "$oid": "625dc9ec8d3f630366aa1ba1"
+  },
+  "nombre": "Ciego de Ávila"
+},{
+  "_id": {
+    "$oid": "625dca048d3f630366aa1ba2"
+  },
+  "nombre": "Camagüey"
+},{
+  "_id": {
+    "$oid": "625dca118d3f630366aa1ba3"
+  },
+  "nombre": "Las Tunas"
+},{
+  "_id": {
+    "$oid": "625dca1c8d3f630366aa1ba4"
+  },
+  "nombre": "Holguín"
+},{
+  "_id": {
+    "$oid": "625dca288d3f630366aa1ba5"
+  },
+  "nombre": "Granma"
+},{
+  "_id": {
+    "$oid": "625dca348d3f630366aa1ba6"
+  },
+  "nombre": "Santiago de Cuba"
+},{
+  "_id": {
+    "$oid": "625dca428d3f630366aa1ba7"
+  },
+  "nombre": "Guantánamo"
+},{
+  "_id": {
+    "$oid": "625dca4e8d3f630366aa1ba8"
+  },
+  "nombre": "Isla de la Juventud"
+}]

@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "625eefc2425e7dd5db0959a5"
+  },
+  "nombre": "Suchel Camacho S.A."
+},{
+  "_id": {
+    "$oid": "625eefd5425e7dd5db0959a6"
+  },
+  "nombre": "Suchel Proquimia S.A."
+},{
+  "_id": {
+    "$oid": "625eefe0425e7dd5db0959a7"
+  },
+  "nombre": "Compacto Caribe S.A."
+},{
+  "_id": {
+    "$oid": "627d6f4a13857927db6c2f6e"
+  },
+  "nombre": "Durero Caribe S.A."
+},{
+  "_id": {
+    "$oid": "627d6f5313857927db6c2f6f"
+  },
+  "nombre": "Mediatex S.A."
+},{
+  "_id": {
+    "$oid": "627d6f5c13857927db6c2f70"
+  },
+  "nombre": "Dujo Copo S.A."
+},{
+  "_id": {
+    "$oid": "627d6f6e13857927db6c2f71"
+  },
+  "nombre": "Konfort Industria del Descanso S.A."
+},{
+  "_id": {
+    "$oid": "627d6f7c13857927db6c2f72"
+  },
+  "nombre": "Adypel S.A."
+}]

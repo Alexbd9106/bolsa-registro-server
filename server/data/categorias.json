@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "625ef525425e7dd5db0959aa"
+  },
+  "nombre": "Obrero"
+},{
+  "_id": {
+    "$oid": "625ef53f425e7dd5db0959ab"
+  },
+  "nombre": "Servicio"
+},{
+  "_id": {
+    "$oid": "625ef54d425e7dd5db0959ac"
+  },
+  "nombre": "Técnico"
+},{
+  "_id": {
+    "$oid": "625ef558425e7dd5db0959ad"
+  },
+  "nombre": "Especialista"
+},{
+  "_id": {
+    "$oid": "625ef56a425e7dd5db0959ae"
+  },
+  "nombre": "Administrativo"
+},{
+  "_id": {
+    "$oid": "625ef578425e7dd5db0959af"
+  },
+  "nombre": "Cuadro"
+}]

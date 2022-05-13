@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "625ef5de425e7dd5db0959b9"
+  },
+  "nombre": "Soltero"
+},{
+  "_id": {
+    "$oid": "625ef5ef425e7dd5db0959ba"
+  },
+  "nombre": "Casado"
+},{
+  "_id": {
+    "$oid": "625ef5fd425e7dd5db0959bb"
+  },
+  "nombre": "Divorciado"
+},{
+  "_id": {
+    "$oid": "625ef607425e7dd5db0959bc"
+  },
+  "nombre": "Viudo"
+}]
