@@ -40,7 +40,36 @@ router.post('', (req, res, next) => {
     otros_oficios: req.body.otros_oficios,
     estado: req.body.estado,
     causa_eliminacion: req.body.causa_eliminacion,
-    causa_no_apto: req.body.causa_no_apto
+    causa_no_apto: req.body.causa_no_apto,
+    preseleccion: req.body.preseleccion,
+    fecha_inicio_proceso_investigativo: req.body.fecha_inicio_proceso_investigativo,
+    fecha_fin_proceso_investigativo: req.body.fecha_fin_proceso_investigativo,
+    resultado_proceso_investigativo: req.body.resultado_proceso_investigativo,
+    curriculum_vitae: req.body.curriculum_vitae,
+    fecha_curriculum_vitae: req.body.fecha_curriculum_vitae,
+    autobiografia: req.body.autobiografia,
+    fecha_autobiografia: req.body.fecha_autobiografia,
+    titulo: req.body.titulo,
+    fecha_titulo: req.body.fecha_titulo,
+    chequeo_medico: req.body.chequeo_medico,
+    fecha_chequeo_medico: req.body.fecha_chequeo_medico,
+    avales_cdr: req.body.avales_cdr,
+    fecha_avales_cdr: req.body.fecha_avales_cdr,
+    avales_centro_trabajo: req.body.avales_centro_trabajo,
+    fecha_avales_centro_trabajo: req.body.fecha_avales_centro_trabajo,
+    fotos: req.body.fotos,
+    fecha_fotos: req.body.fecha_fotos,
+    anexo1: req.body.anexo1,
+    fecha_anexo1: req.body.fecha_anexo1,
+    antecedentes: req.body.antecedentes,
+    fecha_antecedentes: req.body.fecha_antecedentes,
+    evaluacion_psicologica: req.body.evaluacion_psicologica,
+    comite_admision: req.body.comite_admision,
+    mixta: req.body.mixta,
+    cargo_mixta: req.body.cargo_mixta,
+    fecha_mixta: req.body.fecha_mixta,
+    causa_devolucion: req.body.causa_devolucion,
+    fecha_devolucion: req.body.fecha_devolucion,
   });
 
   aspirante.save().then(aspiranteCreado => {
@@ -97,62 +126,62 @@ router.post('', (req, res, next) => {
   hastas = hasta.toString().replace(/,/g, "<br><br>");
 
   var contenido = "<div style='margin-left: 20mm; margin-right: 20mm'>" +
-                    "<p style='text-align: center; font-size: 16px; font-family: Sans;'><strong>Datos Personales</strong></p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Nombre y Apellidos: </strong>" + aspirante.nombre + " " + aspirante.apellidos + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Alias: </strong>" + aspirante.alias + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Carné de Identidad: </strong>" + aspirante.ci + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Sexo: </strong>" + aspirante.sexo + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Edad: </strong>" + aspirante.edad + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Provincia: </strong>" + aspirante.provincia + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Municipio: </strong>" + aspirante.municipio + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Dirección: </strong>" + aspirante.direccion + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Correo Electrónico: </strong>" + aspirante.correo + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Teléfono(s): </strong>" + aspirante.telefono + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Teléfono(s): </strong>" + aspirante.raza + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Estado Civil: </strong>" + aspirante.estado_civil + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Cantidad de Hijos: </strong>" + aspirante.hijos + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Estatura (Metros): </strong>" + aspirante.estatura + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Peso (Kg): </strong>" + aspirante.peso + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Licencia de Conducción: </strong>" + licencia + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Categoría de Licencia: </strong>" + categorias + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Organizaciones a las que Pertenece: </strong>" + militancias + "</p>" +
+                    "<p style='text-align: center; font-size: 16px; font-family: Times New Roman;'><strong>Datos Personales</strong></p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Nombre y Apellidos: </strong>" + aspirante.nombre + " " + aspirante.apellidos + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Alias: </strong>" + aspirante.alias + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Carné de Identidad: </strong>" + aspirante.ci + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Sexo: </strong>" + aspirante.sexo + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Edad: </strong>" + aspirante.edad + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Provincia: </strong>" + aspirante.provincia + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Municipio: </strong>" + aspirante.municipio + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Dirección: </strong>" + aspirante.direccion + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Correo Electrónico: </strong>" + aspirante.correo + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Teléfono(s): </strong>" + aspirante.telefono + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Teléfono(s): </strong>" + aspirante.raza + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Estado Civil: </strong>" + aspirante.estado_civil + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Cantidad de Hijos: </strong>" + aspirante.hijos + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Estatura (Metros): </strong>" + aspirante.estatura + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Peso (Kg): </strong>" + aspirante.peso + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Licencia de Conducción: </strong>" + licencia + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Categoría de Licencia: </strong>" + categorias + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Organizaciones a las que Pertenece: </strong>" + militancias + "</p>" +
                   "</div>" +
                   "<br />" +
                   "<div style='margin-left: 20mm; margin-right: 20mm'>" +
-                    "<p style='text-align: center; font-size: 16px; font-family: Sans;'><strong>Datos Profesionales</strong></p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Nivel de Escolaridad: </strong>" + aspirante.nivel_escolaridad + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Título de Graduado: </strong>" + aspirante.titulo_graduado + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Experiencia Laboral (Años): </strong>" + aspirante.experiencia_laboral + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Otros Estudios Realizados: </strong>" + aspirante.otros_estudios + "</p>" +
+                    "<p style='text-align: center; font-size: 16px; font-family: Times New Roman;'><strong>Datos Profesionales</strong></p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Nivel de Escolaridad: </strong>" + aspirante.nivel_escolaridad + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Título de Graduado: </strong>" + aspirante.titulo_graduado + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Experiencia Laboral (Años): </strong>" + aspirante.experiencia_laboral + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Otros Estudios Realizados: </strong>" + aspirante.otros_estudios + "</p>" +
                   "</div>" +
                   "<br />" +
                   "<div style='margin-left: 20mm; margin-right: 20mm'>" +
-                    "<p style='text-align: center; font-size: 16px; font-family: Sans;'><strong>Datos Laborales</strong></p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Situación Laboral: </strong>" + aspirante.situacion_laboral + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Centro de Trabajo : </strong>" + aspirante.centro_trabajo + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Organismo : </strong>" + aspirante.organismo_trabajo + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Cargo: </strong>" + aspirante.cargo_trabajo + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Categoría Ocupacional : </strong>" + aspirante.categoria_trabajo + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Dirección: </strong>" + aspirante.direccion_trabajo + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Teléfono(s) : </strong>" + aspirante.telefono_trabajo + "</p>" +
-                    "<p style='text-align: justify; font-size: 12px; font-family: Sans;'><strong>Otros Oficios que Domina: </strong>" + aspirante.otros_oficios + "</p>" +
+                    "<p style='text-align: center; font-size: 16px; font-family: Times New Roman;'><strong>Datos Laborales</strong></p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Situación Laboral: </strong>" + aspirante.situacion_laboral + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Centro de Trabajo : </strong>" + aspirante.centro_trabajo + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Organismo : </strong>" + aspirante.organismo_trabajo + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Cargo: </strong>" + aspirante.cargo_trabajo + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Categoría Ocupacional : </strong>" + aspirante.categoria_trabajo + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Dirección: </strong>" + aspirante.direccion_trabajo + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Teléfono(s) : </strong>" + aspirante.telefono_trabajo + "</p>" +
+                    "<p style='text-align: justify; font-size: 12px; font-family: Times New Roman;'><strong>Otros Oficios que Domina: </strong>" + aspirante.otros_oficios + "</p>" +
                   "</div>" +
                   "<br />" +
                   "<div style='margin-left: 20mm; margin-right: 20mm'>" +
-                    "<p style='text-align: center; font-size: 16px; font-family: Sans;'><strong>Trayectoria Laboral Hasta la Actualidad</strong></p>" +
+                    "<p style='text-align: center; font-size: 16px; font-family: Times New Roman;'><strong>Trayectoria Laboral Hasta la Actualidad</strong></p>" +
                     "<table style='border: black 1px solid; margin: 0 auto;'>" +
                       "<tr>" +
-                        "<th style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>Actividad Desempeñada</th>" +
-                        "<th style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>Centro de Trabajo</th>" +
-                        "<th style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>Desde</th>" +
-                        "<th style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>Hasta</th>" +
+                        "<th style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Times New Roman; padding-left: 10px; padding-right: 10px;'>Actividad Desempeñada</th>" +
+                        "<th style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Times New Roman; padding-left: 10px; padding-right: 10px;'>Centro de Trabajo</th>" +
+                        "<th style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Times New Roman; padding-left: 10px; padding-right: 10px;'>Desde</th>" +
+                        "<th style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Times New Roman; padding-left: 10px; padding-right: 10px;'>Hasta</th>" +
                       "</tr>" +
                       "<br /><br />" +
                       "<tr>" +
-                        "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>" + actividades + "</td>" +
-                        "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>" + centros + "</td>" +
-                        "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>" + desdes + "</td>" +
-                        "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Sans; padding-left: 10px; padding-right: 10px;'>" + hastas + "</td>" +
+                        "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Times New Roman; padding-left: 10px; padding-right: 10px;'>" + actividades + "</td>" +
+                        "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Times New Roman; padding-left: 10px; padding-right: 10px;'>" + centros + "</td>" +
+                        "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Times New Roman; padding-left: 10px; padding-right: 10px;'>" + desdes + "</td>" +
+                        "<td style='border: black 1px solid; text-align: center; font-size: 12px; font-family: Times New Roman; padding-left: 10px; padding-right: 10px;'>" + hastas + "</td>" +
                       "</tr>" +
                     "</table>" +
                   "</div>"
@@ -193,9 +222,9 @@ router.post('', (req, res, next) => {
     from: '"Bolsa Empleadora Industrias NEXUS S.A." <no-reply@nexus.co.cu>',
     to: aspirante.correo,
     subject: "¡Gracias por su registro!",
-    html: "<h1 style='text-align: center; font-family: Sans'>¡Gracias por su registro!</h1>" +
-          "<p style='text-align: center; font-family: Sans; font-size: 14px'>A partir de este momento usted " + aspirante.nombre + " " + aspirante.apellidos + ", forma parte de la lista de candidatos a pertenecer a la Bolsa Empleadora de Industrias NEXUS S.A.</p>" +
-          "<p style='text-align: center; font-family: Sans; font-size: 14px'>En caso de ser llamado para ser entrevistado por favor presentarse con los documentos que se relacionan en este correo correctamente llenados.</p>" +
+    html: "<h1 style='text-align: center; font-family: Times New Roman'>¡Gracias por su registro!</h1>" +
+          "<p style='text-align: center; font-family: Times New Roman; font-size: 14px'>A partir de este momento usted " + aspirante.nombre + " " + aspirante.apellidos + ", forma parte de la lista de candidatos a pertenecer a la Bolsa Empleadora de Industrias NEXUS S.A.</p>" +
+          "<p style='text-align: center; font-family: Times New Roman; font-size: 14px'>En caso de ser llamado para ser entrevistado por favor presentarse con los documentos que se relacionan en este correo correctamente llenados.</p>" +
           "<ol>" +
           "<li>Fotocopia Avalada del Título</li>" +
           "<li>Autobiografía</li>" +
@@ -206,7 +235,7 @@ router.post('', (req, res, next) => {
           "<li>2 Fotos Actuales</li>" +
           "<li>Antecedentes Penales</li>" +
           "</ol>" +
-          "<p style='text-align: center; font-family: Sans; font-size: 14px'>Para el equipo de trabajo de la Sucursal Empleadora de Industrias NEXUS S.A. es un placer que usted nos haya escogido para obtener una nueva oportunidad laboral.</p>",
+          "<p style='text-align: center; font-family: Times New Roman; font-size: 14px'>Para el equipo de trabajo de la Sucursal Empleadora de Industrias NEXUS S.A. es un placer que usted nos haya escogido para obtener una nueva oportunidad laboral.</p>",
   };
 
   const email1 = {
@@ -281,7 +310,36 @@ router.put("/:id", (req, res, next) => {
     otros_oficios: req.body.otros_oficios,
     estado: req.body.estado,
     causa_eliminacion: req.body.causa_eliminacion,
-    causa_no_apto: req.body.causa_no_apto
+    causa_no_apto: req.body.causa_no_apto,
+    preseleccion: req.body.preseleccion,
+    fecha_inicio_proceso_investigativo: req.body.fecha_inicio_proceso_investigativo,
+    fecha_fin_proceso_investigativo: req.body.fecha_fin_proceso_investigativo,
+    resultado_proceso_investigativo: req.body.resultado_proceso_investigativo,
+    curriculum_vitae: req.body.curriculum_vitae,
+    fecha_curriculum_vitae: req.body.fecha_curriculum_vitae,
+    autobiografia: req.body.autobiografia,
+    fecha_autobiografia: req.body.fecha_autobiografia,
+    titulo: req.body.titulo,
+    fecha_titulo: req.body.fecha_titulo,
+    chequeo_medico: req.body.chequeo_medico,
+    fecha_chequeo_medico: req.body.fecha_chequeo_medico,
+    avales_cdr: req.body.avales_cdr,
+    fecha_avales_cdr: req.body.fecha_avales_cdr,
+    avales_centro_trabajo: req.body.avales_centro_trabajo,
+    fecha_avales_centro_trabajo: req.body.fecha_avales_centro_trabajo,
+    fotos: req.body.fotos,
+    fecha_fotos: req.body.fecha_fotos,
+    anexo1: req.body.anexo1,
+    fecha_anexo1: req.body.fecha_anexo1,
+    antecedentes: req.body.antecedentes,
+    fecha_antecedentes: req.body.fecha_antecedentes,
+    evaluacion_psicologica: req.body.evaluacion_psicologica,
+    comite_admision: req.body.comite_admision,
+    mixta: req.body.mixta,
+    cargo_mixta: req.body.cargo_mixta,
+    fecha_mixta: req.body.fecha_mixta,
+    causa_devolucion: req.body.causa_devolucion,
+    fecha_devolucion: req.body.fecha_devolucion,
   });
   Aspirante.updateOne({_id: req.params.id}, aspirante).then(result => {
     res.status(200).json({
