@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "625eefc2425e7dd5db0959a5"
+  },
+  "nombre": "Blanca"
+},{
+  "_id": {
+    "$oid": "625eefd5425e7dd5db0959a6"
+  },
+  "nombre": "Mestiza"
+},{
+  "_id": {
+    "$oid": "625eefe0425e7dd5db0959a7"
+  },
+  "nombre": "Negra"
+}]

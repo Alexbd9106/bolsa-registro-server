@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "625ef583425e7dd5db0959b2"
+  },
+  "nombre": "9no Grado"
+},{
+  "_id": {
+    "$oid": "625ef59d425e7dd5db0959b3"
+  },
+  "nombre": "Técnico Medio"
+},{
+  "_id": {
+    "$oid": "625ef5aa425e7dd5db0959b4"
+  },
+  "nombre": "Bachiller"
+},{
+  "_id": {
+    "$oid": "625ef5b9425e7dd5db0959b5"
+  },
+  "nombre": "Técnico/Bachiller"
+},{
+  "_id": {
+    "$oid": "625ef5cb425e7dd5db0959b6"
+  },
+  "nombre": "Nivel Superior"
+}]

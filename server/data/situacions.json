@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "625ef629425e7dd5db0959c3"
+  },
+  "nombre": "Con Vínculo Laboral"
+},{
+  "_id": {
+    "$oid": "625ef63e425e7dd5db0959c4"
+  },
+  "nombre": "Desvinculado"
+},{
+  "_id": {
+    "$oid": "625ef649425e7dd5db0959c5"
+  },
+  "nombre": "Recien Graduado"
+},{
+  "_id": {
+    "$oid": "625ef655425e7dd5db0959c6"
+  },
+  "nombre": "Jubilado"
+},{
+  "_id": {
+    "$oid": "625ef668425e7dd5db0959c7"
+  },
+  "nombre": "Desmovilizado FAR"
+},{
+  "_id": {
+    "$oid": "625ef678425e7dd5db0959c8"
+  },
+  "nombre": "MININT"
+}]
